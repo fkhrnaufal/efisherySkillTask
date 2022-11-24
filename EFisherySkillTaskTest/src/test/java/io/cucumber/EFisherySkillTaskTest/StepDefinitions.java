@@ -3,7 +3,6 @@ package io.cucumber.EFisherySkillTaskTest;
 import io.cucumber.java.en.*;
 
 import org.openqa.selenium.WebDriver;
-import org.junit.jupiter.api.Assertions.*;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,13 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
-//Play and Pause the song
-//Given user on the homepage
-//When user click one of the songs in the homepage
-//And user pause the selected song by clicking the pause button
-//Then the song will be played and then pause
 
 
 public class StepDefinitions {
@@ -64,13 +56,10 @@ public class StepDefinitions {
     	pauseSongButton.click();
     }
     
-    
+   
     @Then("^the song will be played, paused, skipped forward and skipped backwards$")
     public void the_song_will_be_played_paused_skipped_forward_and_skipped_backwards() throws Throwable {
-    	System.out.println("Songs succesfuly played and paused");
+    	System.out.println("Songs succesfuly played, paused skipped forward and skipped backwards");
     }
  
-   
-
-
 }
